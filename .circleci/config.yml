@@ -16,7 +16,7 @@ parameters:
     default: https://github.com/esnet/iperf.git
   src-releases-list-url:
     type: string
-    default: https://github.com/esnet/iperf/releases
+    default: https://github.com/esnet/iperf/releases/tags
   target-rev:
     type: string
     default: ""
