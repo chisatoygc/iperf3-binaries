@@ -82,9 +82,9 @@ jobs:
               echo Detected the latest release from the origin with revision ${TARGET_REV}.
             fi
 
-            git clone << pipeline.parameters.src-repo >> > /dev/null 2>&1
+            git clone << pipeline.parameters.src-repo >>
             cd iperf
-            git checkout ${TARGET_REV} > /dev/null 2>&1
+            git checkout ${TARGET_REV} 
             TARGET_COMMIT_HASH=$(git rev-parse HEAD)
             cd ../
             echo Corresponding commit hash is ${TARGET_COMMIT_HASH}.
